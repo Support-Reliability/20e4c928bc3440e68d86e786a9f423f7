@@ -4,54 +4,184 @@ import io.cucumber.java.en.*;
 
 public class StepDefinitions {
 
-    @Given("the user has entered a valid mobile number {string}, country code {string}, and captcha code {string}")
-    public void theUserHasEnteredAValidMobileNumberCountryCodeAndCaptchaCode(String mobile, String country_code, String captcha_code) {
-        System.out.println("Executing step: the user has entered a valid mobile number {string}, country code {string}, and captcha code {string}");
+    @Given("I am a "registered user" logging into the platform")
+    public void iAmARegisteredUserLoggingIntoThePlatform() {
+        System.out.println("Executing step: I am a "registered user" logging into the platform");
     }
 
-    @When("the user initiates an OTP request")
-    public void theUserInitiatesAnOtpRequest() {
-        System.out.println("Executing step: the user initiates an OTP request");
+    @When("I login")
+    public void iLogin() {
+        System.out.println("Executing step: I login");
     }
 
-    @Then("an OTP should be sent to the specified mobile number")
-    public void anOtpShouldBeSentToTheSpecifiedMobileNumber() {
-        System.out.println("Executing step: an OTP should be sent to the specified mobile number");
+    @Then("I should see the result as "failure"")
+    public void iShouldSeeTheResultAsFailure() {
+        System.out.println("Executing step: I should see the result as "failure"");
     }
 
-    @Given("the user enters the received OTP {string} for the mobile number {string}")
-    public void theUserEntersTheReceivedOtpForTheMobileNumber(String otp, String mobile) {
-        System.out.println("Executing step: the user enters the received OTP {string} for the mobile number {string}");
+    @When("I verify otp")
+    public void iVerifyOtp() {
+        System.out.println("Executing step: I verify otp");
     }
 
-    @When("the user submits the OTP for verification")
-    public void theUserSubmitsTheOtpForVerification() {
-        System.out.println("Executing step: the user submits the OTP for verification");
+    @When("I search product")
+    public void iSearchProduct() {
+        System.out.println("Executing step: I search product");
     }
 
-    @Then("the user should be successfully authenticated")
-    public void theUserShouldBeSuccessfullyAuthenticated() {
-        System.out.println("Executing step: the user should be successfully authenticated");
+    @When("I add product to cart")
+    public void iAddProductToCart() {
+        System.out.println("Executing step: I add product to cart");
     }
 
-    @Given("the user is authenticated")
-    public void theUserIsAuthenticated() {
-        System.out.println("Executing step: the user is authenticated");
+    @When("I verify cart")
+    public void iVerifyCart() {
+        System.out.println("Executing step: I verify cart");
     }
 
-    @When("the user searches for {string}")
-    public void theUserSearchesFor(String product_name) {
-        System.out.println("Executing step: the user searches for {string}");
+    @When("I add address")
+    public void iAddAddress() {
+        System.out.println("Executing step: I add address");
     }
 
-    @Then("the system should display products related to {string}")
-    public void theSystemShouldDisplayProductsRelatedTo(String product_name) {
-        System.out.println("Executing step: the system should display products related to {string}");
+    @When("I get address")
+    public void iGetAddress() {
+        System.out.println("Executing step: I get address");
     }
 
-    @And("the system should include at least one product with a detailed description and price")
-    public void theSystemShouldIncludeAtLeastOneProductWithADetailedDescriptionAndPrice() {
-        System.out.println("Executing step: the system should include at least one product with a detailed description and price");
+    @When("I select address")
+    public void iSelectAddress() {
+        System.out.println("Executing step: I select address");
+    }
+
+    @When("I get payment options")
+    public void iGetPaymentOptions() {
+        System.out.println("Executing step: I get payment options");
+    }
+
+    @When("I get aggregators")
+    public void iGetAggregators() {
+        System.out.println("Executing step: I get aggregators");
+    }
+
+    @When("I review order")
+    public void iReviewOrder() {
+        System.out.println("Executing step: I review order");
+    }
+
+    @When("I checkout")
+    public void iCheckout() {
+        System.out.println("Executing step: I checkout");
+    }
+
+    @When("I get order")
+    public void iGetOrder() {
+        System.out.println("Executing step: I get order");
+    }
+
+    @When("I delete address")
+    public void iDeleteAddress() {
+        System.out.println("Executing step: I delete address");
+    }
+
+    @When("I logout")
+    public void iLogout() {
+        System.out.println("Executing step: I logout");
+    }
+
+    @When("I customer cancel - kapture")
+    public void iCustomerCancelKapture() {
+        System.out.println("Executing step: I customer cancel - kapture");
+    }
+
+    @When("I verify customer cancel shipment")
+    public void iVerifyCustomerCancelShipment() {
+        System.out.println("Executing step: I verify customer cancel shipment");
+    }
+
+    @When("I seller cancellation")
+    public void iSellerCancellation() {
+        System.out.println("Executing step: I seller cancellation");
+    }
+
+    @When("I verify seller cancel shipment")
+    public void iVerifySellerCancelShipment() {
+        System.out.println("Executing step: I verify seller cancel shipment");
+    }
+
+    @When("I invoice")
+    public void iInvoice() {
+        System.out.println("Executing step: I invoice");
+    }
+
+    @When("I dispatch")
+    public void iDispatch() {
+        System.out.println("Executing step: I dispatch");
+    }
+
+    @When("I intransit")
+    public void iIntransit() {
+        System.out.println("Executing step: I intransit");
+    }
+
+    @When("I outfordelivery")
+    public void iOutfordelivery() {
+        System.out.println("Executing step: I outfordelivery");
+    }
+
+    @When("I delivered")
+    public void iDelivered() {
+        System.out.println("Executing step: I delivered");
+    }
+
+    @When("I initiate return - kapture")
+    public void iInitiateReturnKapture() {
+        System.out.println("Executing step: I initiate return - kapture");
+    }
+
+    @When("I verify return shipment")
+    public void iVerifyReturnShipment() {
+        System.out.println("Executing step: I verify return shipment");
+    }
+
+    @When("I platform login")
+    public void iPlatformLogin() {
+        System.out.println("Executing step: I platform login");
+    }
+
+    @When("I platform token")
+    public void iPlatformToken() {
+        System.out.println("Executing step: I platform token");
+    }
+
+    @When("I platform access")
+    public void iPlatformAccess() {
+        System.out.println("Executing step: I platform access");
+    }
+
+    @When("I return bag picked")
+    public void iReturnBagPicked() {
+        System.out.println("Executing step: I return bag picked");
+    }
+
+    @When("I return bag in transit")
+    public void iReturnBagInTransit() {
+        System.out.println("Executing step: I return bag in transit");
+    }
+
+    @When("I return complete")
+    public void iReturnComplete() {
+        System.out.println("Executing step: I return complete");
+    }
+
+    @When("I rto")
+    public void iRto() {
+        System.out.println("Executing step: I rto");
+    }
+
+    @When("I rto complete")
+    public void iRtoComplete() {
+        System.out.println("Executing step: I rto complete");
     }
 
 }
